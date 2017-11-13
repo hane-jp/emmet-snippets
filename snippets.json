@@ -1,0 +1,67 @@
+{
+	"variables": {
+		"lang": "ja",
+		"locale": "ja-JP",
+		"indentation": "  "
+	},
+	"css": {
+		"snippets": {
+			"cm1": "/* ========= */",
+			"cm3": "/* ${1:comment} ========= */",
+			"hover": "&:hover{|}",
+			"@wrap": "@include wrap;",
+			"@bgi": "@include bg-img(${1:url},png);",
+			"@cf": "@include clearfix();",
+			"@each": "@each \\$class in ${1:class},${2:class} {}//each",
+			"@for": "@for \\$num from 1 through 3{|}//for",
+			"@icon-f": "@include icon-font(${1:class});",
+			"@img": "@include img(${1:url},png);",
+			"img-w": "image-width(\"${1:url}\");",
+			"img-h": "image-height(\"${1:url}\");",
+			"img-u": "image-url(\"${1:url}\");",
+			"@max-s": "@include max-screen(\\$width-s){|}",
+			"@max-m": "@include max-screen(\\$width-m){|}",
+			"@min-l": "@include min-screen(\\$width-m){|}",
+			":b": "&::before{|}",
+			":a": "&::after{|}",
+			":f": "&:first-child{|}",
+			":l": "&:last-child{|}",
+			":n": "&:nth-child(|){|}",
+			"$cd": "\\$color-dark",
+			"$cl": "\\$color-light",
+			"$cb": "\\$color-brand",
+			"$cp": "\\$color-point",
+			"flex": "max-width: 50%;\nflex: 0 0 50%;",
+			"center": "display: flex;\nalign-items: center;\njustify-content: center;",
+			"hover": "@include touch-hover(){|}",
+			".des":".description",
+			"tran":"transition: all .5s;",
+			"@row":"display: flex;\nflex-wrap: wrap;\nalign-items: center;\njustify-content: center;\nmargin-right: -\\$bm-inner;\nmargin-left: -\\$bm-inner;\n@include max-screen(\\$width-s){ \nmargin-right: -\\$bm;\nmargin-left: -\\$bm;\n}",
+			"@item":"box-sizing:border-box;\nmax-width:(100%/3);\nflex: 0 0 (100%/3);\npadding-left:\\$bm-inner;\npadding-right:\\$bm-inner;\nmargin-bottom:\\$bm-inner;\n@include max-screen(\\$width-m){\nmax-width: 50%;\nflex: 0 0 50%;\n}\n@include max-screen(\\$width-s){\nmax-width: 100%;\nflex: 0 0 100%;\npadding-right:\\$bm;\npadding-left:\\$bm;\nmargin-bottom:\\$bm;\n}",
+			"scale": "transform: scale3d(1.1,1.1,1);",
+			"rotate": "transform: rotate(-45deg);\ntransform-origin:50% 50%;",
+			"@k":"@include kerning;"
+		}
+	},
+
+	"php": {
+		"extends": "html"
+	},
+	"html": {
+		"snippets": {
+			"cm3": "/* ${1:comment} ========= */",
+			"c":"class=\"|\"",
+			"s":"style=\"max-width:|px;\"",
+			"uf":"u-float__",
+			"php": "<?php | ?>",
+			"phpbase":"<?php echo \\$base_url; ?>",
+			"phpimg":"<?php echo \\$img_url; ?>",
+			"up":"u-position__|",
+			"uo":"u-only__|",
+			"uc":"u-column__|",
+			"us":"<small class=\"u-small\">|</small>",
+			"ui":"u-img__",
+			"figi":"<figure>\n<img\nsrc=\"\"\nalt=\"\"\nclass=\"\">\n</figure>"
+		}
+	}
+}
